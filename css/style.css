@@ -1925,6 +1925,198 @@ textarea::placeholder {
 }
 
 /* ========================================
+   Homepage Header Match
+   ======================================== */
+.home-page .top-bar-home {
+    background: #2f3d50;
+    padding: 0;
+}
+
+.home-page .top-bar-home .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.home-page .top-bar-home .top-bar-content {
+    min-height: 66px;
+    padding-left: 56px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0;
+}
+
+.home-page .top-bar-home .top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.home-page .top-bar-home .top-bar-left::-webkit-scrollbar {
+    display: none;
+}
+
+.home-page .top-bar-home .top-bar-left a {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.84rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+}
+
+.home-page .top-bar-home .top-bar-left i {
+    color: rgba(255, 255, 255, 0.92);
+    margin-right: 8px;
+}
+
+.home-page .top-bar-home .top-bar-right {
+    display: flex;
+    align-items: stretch;
+}
+
+.home-page .top-appointment-btn {
+    min-height: 66px;
+    min-width: 360px;
+    padding: 0 40px;
+    background: #0b69da;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.home-page .top-appointment-btn i {
+    font-size: 0.85rem;
+}
+
+.home-page .navbar-home {
+    background-image: linear-gradient(rgba(17, 27, 41, 0.7), rgba(17, 27, 41, 0.7)),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=360&fit=crop');
+    background-size: cover;
+    background-position: center;
+    border: 0;
+}
+
+.home-page .navbar-home .container {
+    max-width: 100%;
+    padding: 0 60px;
+}
+
+.home-page .navbar-home .nav-wrapper {
+    min-height: 120px;
+    padding: 0;
+}
+
+.home-page .navbar-home .logo img {
+    height: 64px;
+}
+
+.home-page .navbar-home .logo span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #fff;
+    line-height: 1.1;
+    text-transform: none;
+}
+
+.home-page .navbar-home .nav-menu {
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.home-page .navbar-home .nav-menu > li > a {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.home-page .navbar-home .nav-menu > li > a.active,
+.home-page .navbar-home .nav-menu > li > a:hover {
+    color: #0b69da;
+}
+
+.home-page .navbar-home .nav-menu > li > a::after {
+    display: none;
+}
+
+.home-page .navbar-home .dropdown-menu {
+    background: #2f3d50;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-page .navbar-home .dropdown-menu a {
+    color: #fff;
+}
+
+.home-page .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.home-page .lang-flag {
+    width: 15px;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    background: linear-gradient(180deg, #b22234 0 50%, #ffffff 50% 100%);
+    position: relative;
+}
+
+.home-page .lang-flag::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: #3c3b6e;
+}
+
+.home-page .nav-actions {
+    gap: 0;
+}
+
+.home-page .nav-inquiry {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.home-page .nav-inquiry i {
+    font-size: 3.2rem;
+    opacity: 0.95;
+}
+
+.home-page .nav-inquiry strong {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    display: block;
+}
+
+.home-page .nav-inquiry span {
+    display: block;
+    margin-top: 6px;
+    font-size: 2.25rem;
+    line-height: 1;
+}
+
+.home-page .navbar-home .mobile-menu-toggle span {
+    background: #ffffff;
+}
+
+/* ========================================
    Responsive Design
    ======================================== */
 @media (max-width: 1024px) {
@@ -2196,6 +2388,35 @@ textarea::placeholder {
 
     .home-page .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .home-page .top-bar-home .top-bar-content {
+        padding-left: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .home-page .top-appointment-btn {
+        min-width: 100%;
+    }
+
+    .home-page .navbar-home .container {
+        padding: 0 20px;
+    }
+
+    .home-page .navbar-home .nav-menu {
+        margin-left: 0;
+    }
+
+    .home-page .nav-inquiry {
+        margin-left: 0;
+    }
+
+    .home-page .nav-inquiry strong {
+        font-size: 1rem;
+    }
+
+    .home-page .nav-inquiry span {
+        font-size: 1.45rem;
     }
 }
 
