@@ -13,69 +13,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="home-page">
-    <!-- Top Contact Bar -->
-    <div class="top-bar top-bar-home">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <a href="#"><i class="fas fa-map-marker-alt"></i> Address 1: Naser City</a>
-                    <a href="#"><i class="fas fa-map-marker-alt"></i> Address 3: Zayed</a>
-                    <a href="#"><i class="fas fa-map-marker-alt"></i> Address 2: (M G I PORTAL) Dubai</a>
-                    <a href="mailto:info@mg-visa.com"><i class="fas fa-envelope"></i> Email: Info@mg-visa.com</a>
-                </div>
-                <div class="top-bar-right">
-                    <a href="booking.html" class="top-appointment-btn">Book An Appointment <i class="fas fa-arrow-right"></i></a>
+    <header class="home-header">
+        <div class="home-header-top">
+            <div class="container">
+                <div class="home-header-top-inner">
+                    <a href="mailto:enquiry@canapprove.com" class="home-email"><i class="fas fa-envelope"></i> enquiry@canapprove.com</a>
+                    <div class="home-socials" aria-label="Social links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Star"><i class="fas fa-star"></i></a>
+                        <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Main Navigation -->
-    <nav class="navbar navbar-home" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="public/logo.png" alt="Vantedge Immigration Consultants">
-                        <span>Vantedge Immigration<br>Consultancy</span>
+        <div class="home-header-brand">
+            <div class="container">
+                <div class="home-header-brand-inner">
+                    <a href="index.html" class="home-brand" aria-label="CanApprove Home">
+                        <span class="brand-word">CAN</span><span class="brand-a">A</span><span class="brand-word">PPROVE</span>
                     </a>
+                    <a href="booking.html" class="home-header-cta">Book a Free Consultation</a>
                 </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li class="dropdown">
-                        <a href="services.html">VISA</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="visa-applications.html">Visa Applications</a></li>
-                            <li><a href="passport-services.html">Passport Services</a></li>
-                            <li><a href="dual-citizenship.html">Dual Citizenship</a></li>
-                            <li><a href="work-study-permits.html">Work & Study Permits</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="services.html">IMMIGRATION</a></li>
-                    <li><a href="#">MEDIA</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="#">DISCOVER</a></li>
-                    <li><a href="#" class="lang-switch"><span class="lang-flag"></span> EN</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <div class="nav-inquiry">
-                        <i class="far fa-comments"></i>
-                        <div>
-                            <strong>Have Any Inquiries? We're Here To Help</strong>
-                            <span>17621</span>
-                        </div>
-                    </div>
-                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            </div>
+        </div>
+
+        <nav class="home-header-nav" id="navbar">
+            <div class="container">
+                <div class="home-header-nav-inner">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="services.html">IMMIGRATION <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="work-study-permits.html">STUDY ABROAD <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">TESTIMONIALS <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">RESOURCE <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">FREE CALCULATORS <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="about.html">WHO WE ARE <i class="fas fa-chevron-down"></i></a></li>
+                    </ul>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <section class="home-build-placeholder" style="min-height: 60vh; display: grid; place-items: center; background: #f3f4f6;">
