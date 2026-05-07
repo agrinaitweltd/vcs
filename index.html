@@ -12,40 +12,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-page">
     <!-- Top Contact Bar -->
-    <div class="top-bar">
+    <div class="top-bar top-bar-home">
         <div class="container">
             <div class="top-bar-content">
                 <div class="top-bar-left">
-                    <a href="mailto:info@vantedge-immigration.com"><i class="fas fa-envelope"></i> info@vantedge-immigration.com</a>
-                    <a href="tel:+256700000000"><i class="fas fa-phone"></i> +256 700 000 000</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Address 1: Naser City</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Address 3: Zayed</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Address 2: (M G I PORTAL) Dubai</a>
+                    <a href="mailto:info@vantedge-immigration.com"><i class="fas fa-envelope"></i> Email: info@vantedge-immigration.com</a>
                 </div>
                 <div class="top-bar-right">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="booking.html" class="top-appointment-btn">Book An Appointment <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Main Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar navbar-home" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
                     <a href="index.html">
                         <img src="public/logo.png" alt="Vantedge Immigration Consultants">
-                        <span>Vantedge Immigration Consultants</span>
+                        <span>Vantedge Immigration<br>Consultancy</span>
                     </a>
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="active">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li class="dropdown">
-                        <a href="services.html">SERVICES <i class="fas fa-chevron-down"></i></a>
+                        <a href="services.html">VISA <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="visa-applications.html">Visa Applications</a></li>
                             <li><a href="passport-services.html">Passport Services</a></li>
@@ -53,11 +52,20 @@
                             <li><a href="work-study-permits.html">Work & Study Permits</a></li>
                         </ul>
                     </li>
+                    <li><a href="services.html">IMMIGRATION</a></li>
+                    <li><a href="#">MEDIA</a></li>
+                    <li><a href="#">BLOG</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="booking.html" class="btn btn-primary">Book Consultation</a>
+                    <div class="nav-inquiry">
+                        <i class="far fa-comments"></i>
+                        <div>
+                            <strong>Have Any Inquiries? We're Here To Help</strong>
+                            <span>17621</span>
+                        </div>
+                    </div>
                     <button class="mobile-menu-toggle" id="mobileMenuToggle">
                         <span></span>
                         <span></span>
@@ -67,27 +75,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="container">
-                <div class="hero-text">
-                    <p class="hero-subtitle">START YOUR IMMIGRATION JOURNEY TODAY</p>
-                    <h1>We go beyond just processing visas— We provide personalized support, expert guidance, and a commitment to your success</h1>
-                    <p class="hero-description">Unlocking New Horizons for you and your family. From application to approvals, we've got you covered.</p>
-                    <div class="hero-buttons">
-                        <a href="booking.html" class="btn btn-primary btn-lg">Book Consultation</a>
-                        <a href="services.html" class="btn btn-outline btn-lg">Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
 
     <!-- Eligibility Check Section -->
     <section class="eligibility-section">
@@ -155,12 +142,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label>Notes:</label>
-                            <textarea name="notes" rows="4" placeholder="Any additional information..."></textarea>
-                        </div>
-
-                        <p class="form-note">To book your consultation, you need to meet all the eligibility requirements listed above.</p>
+                        <p class="form-note"><strong>Note:</strong><br><br>To book your consultation, you need to meet all the eligibility requirements listed above.</p>
 
                         <button type="submit" class="btn btn-primary btn-block">Next</button>
                     </form>
@@ -257,11 +239,16 @@
         <div class="container">
             <div class="about-agency-wrapper">
                 <div class="about-agency-image">
-                    <img src="public/about-image.jpg" alt="Immigration Services" onerror="this.src='https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=600&fit=crop'">
+                    <div class="about-photo-main">
+                        <img src="public/about-image.jpg" alt="Immigration Services" onerror="this.src='https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=600&fit=crop'">
+                    </div>
+                    <div class="about-photo-overlay">
+                        <img src="public/about-image-2.jpg" alt="Immigration Support" onerror="this.src='https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&h=400&fit=crop'">
+                    </div>
                 </div>
                 <div class="about-agency-content">
-                    <p class="section-subtitle">WHO WE ARE</p>
-                    <h2>Trusted Experts in <span class="highlight">Immigration & Visa Solutions</span></h2>
+                    <p class="section-subtitle">ABOUT AGENCY</p>
+                    <h2>Immigration Services <span class="highlight">Led By Experts.</span></h2>
                     <p>At <strong>Vantedge Immigration Consultants</strong>, we make global mobility seamless. With a team of experienced professionals, we provide <strong>personalized immigration guidance</strong> to help individuals and families achieve their dreams of living, working, or studying abroad. <strong>Integrity, expertise, and client-focused solutions</strong> define our approach.</p>
                     
                     <div class="about-features">
@@ -279,7 +266,7 @@
                         </div>
                     </div>
 
-                    <a href="about.html" class="btn btn-primary">Let's make your global dreams a reality!</a>
+                    <a href="about.html" class="btn btn-primary">Let's make your global dreams a reality! <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -361,15 +348,15 @@
         <div class="container">
             <div class="pathways-header">
                 <p class="section-subtitle">IMMIGRATION PATHWAYS WE OFFER</p>
-                <h2>Explore Your Options</h2>
+                <h2>Canada</h2>
             </div>
             <div class="pathways-slider">
                 <div class="pathway-slide active">
                     <div class="pathway-overlay"></div>
                     <div class="pathway-content">
                         <h3>Canada</h3>
-                        <p>Start a new chapter in Canada! With its high quality of life, strong economy, and stunning landscapes, Canada offers incredible opportunities for skilled workers, students, and families looking to immigrate.</p>
-                        <a href="booking.html" class="btn btn-outline">Book An Appointment</a>
+                        <p>Start a new chapter in Australia! With its high quality of life, strong economy, and stunning landscapes, Australia offers incredible opportunities for skilled workers, students, and families looking to immigrate.</p>
+                        <a href="booking.html" class="pathway-cta-link"><span class="circle"><i class="fas fa-chevron-right"></i></span> Book An Appointment</a>
                     </div>
                 </div>
                 <div class="pathway-slide">
@@ -404,7 +391,6 @@
                 <p class="section-subtitle">YOUR GLOBAL JOURNEY STARTS HERE</p>
                 <h2>At Vantedge Immigration Consultancy, we simplify the immigration journey</h2>
                 <p>Whether you're pursuing new career opportunities, reuniting with loved ones, or starting a new chapter abroad, we provide personalized support, trusted expertise, and a commitment to your success.</p>
-                <a href="booking.html" class="btn btn-primary btn-lg">Get Started Today</a>
             </div>
         </div>
     </section>
@@ -419,7 +405,7 @@
                             <img src="public/logo.png" alt="Vantedge Immigration Consultants">
                             <h3>Vantedge Immigration Consultants</h3>
                         </div>
-                        <p>Unlocking New Horizons for you and your family. From application to approvals, we've got you covered.</p>
+                        <p>Unlocking New Horizons for you and your family.<br>From application to approvals, we've got you covered.</p>
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -444,11 +430,12 @@
                         <h4>Services</h4>
                         <ul>
                             <li><a href="visa-applications.html">Immigration Visa</a></li>
-                            <li><a href="work-study-permits.html">Employment Visa</a></li>
+                            <li><a href="dual-citizenship.html">Investment Visa</a></li>
                             <li><a href="work-study-permits.html">Education Visa</a></li>
                             <li><a href="work-study-permits.html">Job Seeking Visa</a></li>
-                            <li><a href="passport-services.html">Passport Services</a></li>
-                            <li><a href="dual-citizenship.html">Dual Citizenship</a></li>
+                            <li><a href="work-study-permits.html">Employment Visa</a></li>
+                            <li><a href="visa-applications.html">Tourism Visa</a></li>
+                            <li><a href="services.html">Countries</a></li>
                         </ul>
                     </div>
 
@@ -458,22 +445,36 @@
                             <div class="contact-item">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div>
-                                    <strong>Address</strong>
-                                    <p>Kampala, Uganda<br>Plot 123, Nakasero Road</p>
+                                    <strong>Address 1</strong>
+                                    <p>Cairo - Nasr City - Makram Ebeid St - Delta Towers, Building 4, Section 2, 3rd Floor</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address 2: M G I PORTAL</strong>
+                                    <p>UAE - Dubai - Abuhail - Horlanz East - City Bay Business Center - Office 216</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address 3</strong>
+                                    <p>TRIVIUM ZAYED Building, Trivium Zayed Complex, 2nd Floor, Unit A231</p>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-phone"></i>
                                 <div>
                                     <strong>Phone</strong>
-                                    <p>+256 700 000 000</p>
+                                    <p>17621</p>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
                                 <div>
                                     <strong>Email Address</strong>
-                                    <p>info@vantedge-immigration.com</p>
+                                    <p>info@mg-visa.com</p>
                                 </div>
                             </div>
                         </div>
@@ -484,10 +485,9 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p>Copyright © 2026 Vantedge Immigration Consultants. All Rights Reserved.</p>
+                    <p>Copyright © 2024 Created By Brandora.</p>
                     <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <a href="#">DMCA PROTECTED</a>
                     </div>
                 </div>
             </div>

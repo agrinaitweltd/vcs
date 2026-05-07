@@ -1231,6 +1231,700 @@ textarea::placeholder {
 }
 
 /* ========================================
+   Home Page Visual Overrides
+   ======================================== */
+.home-page {
+    --home-bg: #2e3b4e;
+    --home-bg-deep: #243447;
+    --home-ink: #e7edf5;
+    --home-muted: #a6b3c4;
+}
+
+.home-page .section-subtitle {
+    color: #aeb9c7;
+    letter-spacing: 3px;
+}
+
+.home-page .top-bar-home {
+    background: #2a3a4d;
+    padding: 0;
+}
+
+.home-page .top-bar-home .top-bar-content {
+    min-height: 90px;
+}
+
+.home-page .top-bar-home .top-bar-left {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home-page .top-bar-home .top-bar-left a {
+    margin-right: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.home-page .top-bar-home .top-bar-left i {
+    color: #f0f5ff;
+}
+
+.home-page .top-appointment-btn {
+    min-height: 90px;
+    padding: 0 38px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: #0f6ad8;
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.home-page .top-appointment-btn:hover {
+    background: #0b5ec3;
+}
+
+.home-page .navbar-home {
+    background: rgba(73, 66, 72, 0.96);
+    box-shadow: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.home-page .navbar-home .nav-wrapper {
+    padding: 26px 0;
+}
+
+.home-page .navbar-home .logo a,
+.home-page .navbar-home .nav-menu > li > a {
+    color: var(--white);
+}
+
+.home-page .navbar-home .logo span {
+    line-height: 1.1;
+    font-size: 1.05rem;
+}
+
+.home-page .navbar-home .logo img {
+    height: 72px;
+    filter: brightness(0) invert(1);
+}
+
+.home-page .navbar-home .nav-menu > li > a.active,
+.home-page .navbar-home .nav-menu > li > a:hover {
+    color: #0f6ad8;
+}
+
+.home-page .nav-inquiry {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--white);
+}
+
+.home-page .nav-inquiry i {
+    font-size: 3rem;
+    opacity: 0.85;
+}
+
+.home-page .nav-inquiry strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+}
+
+.home-page .nav-inquiry span {
+    font-size: 2.8rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 6px;
+}
+
+.home-page .eligibility-section {
+    padding: 110px 0;
+    background: linear-gradient(135deg, rgba(34, 50, 69, 0.96), rgba(45, 58, 78, 0.97));
+    position: relative;
+    overflow: hidden;
+}
+
+.home-page .eligibility-section::before,
+.home-page .eligibility-section::after,
+.home-page .why-choose-section::before,
+.home-page .why-choose-section::after,
+.home-page .cta-section::before {
+    content: '';
+    position: absolute;
+    background: rgba(22, 36, 52, 0.48);
+    clip-path: polygon(0 0, 100% 0, 40% 100%);
+    pointer-events: none;
+}
+
+.home-page .eligibility-section::before {
+    width: 280px;
+    height: 360px;
+    top: -2px;
+    left: -6px;
+}
+
+.home-page .eligibility-section::after {
+    width: 360px;
+    height: 340px;
+    right: -40px;
+    bottom: -80px;
+}
+
+.home-page .eligibility-wrapper {
+    grid-template-columns: 1fr 0.95fr;
+    gap: 100px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .eligibility-content h2 {
+    font-size: clamp(2.4rem, 4vw, 4.1rem);
+    line-height: 1.12;
+    max-width: 680px;
+}
+
+.home-page .eligibility-content .section-subtitle {
+    margin-bottom: 10px;
+}
+
+.home-page .eligibility-form {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.home-page .eligibility-form .form-group {
+    margin-bottom: 28px;
+}
+
+.home-page .eligibility-form .form-group > label {
+    font-size: 0.96rem;
+    color: #c2ccd8;
+    font-weight: 600;
+}
+
+.home-page .eligibility-form .radio-group {
+    flex-direction: column;
+    gap: 12px;
+}
+
+.home-page .eligibility-form .radio-label {
+    color: var(--home-ink);
+}
+
+.home-page .eligibility-form .radio-label input[type="radio"] {
+    accent-color: #1da4ff;
+}
+
+.home-page .form-note {
+    color: #d7e0ea;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    margin: 34px 0 36px;
+}
+
+.home-page .eligibility-form .btn {
+    max-width: 122px;
+    margin-left: auto;
+    background: #d9dde1;
+    color: #243446;
+    box-shadow: none;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.home-page .pathway-section {
+    padding: 100px 0 92px;
+    background: #eceff3;
+}
+
+.home-page .pathway-header {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    text-align: left;
+    gap: 42px;
+    align-items: start;
+    margin-bottom: 60px;
+}
+
+.home-page .pathway-header h2 {
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    line-height: 1.06;
+    max-width: 430px;
+}
+
+.home-page .pathway-header .section-description {
+    margin: 0;
+    font-size: 1.7rem;
+    max-width: 880px;
+    color: #677485;
+}
+
+.home-page .pathway-steps {
+    gap: 26px;
+    max-width: 1320px;
+}
+
+.home-page .step-number {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    color: #334356;
+    font-size: 3.1rem;
+    font-family: var(--font-secondary);
+}
+
+.home-page .step-line {
+    top: 56px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #1e72d0;
+}
+
+.home-page .step-line::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #1e72d0;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+.home-page .step-content h3 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+
+.home-page .step-content p {
+    font-size: 1.45rem;
+    line-height: 1.55;
+}
+
+.home-page .why-choose-section {
+    background: linear-gradient(135deg, rgba(34, 50, 69, 0.98), rgba(45, 58, 78, 0.98));
+    position: relative;
+    overflow: hidden;
+}
+
+.home-page .why-choose-section::before {
+    width: 260px;
+    height: 360px;
+    top: -8px;
+    left: 0;
+}
+
+.home-page .why-choose-section::after {
+    width: 360px;
+    height: 390px;
+    right: -35px;
+    bottom: -110px;
+}
+
+.home-page .why-choose-header {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    align-items: start;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .why-choose-header h2 {
+    font-size: clamp(2.2rem, 4vw, 4.2rem);
+    line-height: 1.26;
+}
+
+.home-page .why-choose-header .section-description {
+    margin: 0;
+    max-width: none;
+    font-size: 1.35rem;
+    color: #b7c2d0;
+}
+
+.home-page .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: none;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .feature-card {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 30px 22px;
+}
+
+.home-page .feature-icon {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: rgba(16, 28, 42, 0.45);
+}
+
+.home-page .feature-card h3 {
+    font-size: 2.1rem;
+}
+
+.home-page .feature-card p {
+    font-size: 1.15rem;
+}
+
+.home-page .about-agency-section {
+    padding-top: 0;
+    background: #eceff3;
+}
+
+.home-page .about-agency-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+}
+
+.home-page .about-agency-content {
+    padding: 70px 0;
+}
+
+.home-page .about-agency-content h2 {
+    font-size: clamp(2.5rem, 4vw, 4.4rem);
+    line-height: 1.08;
+}
+
+.home-page .about-agency-content p {
+    font-size: 1.65rem;
+    line-height: 1.6;
+}
+
+.home-page .about-feature {
+    font-size: 1.35rem;
+}
+
+.home-page .about-agency-image {
+    position: relative;
+    padding-top: 84px;
+}
+
+.home-page .about-photo-main img {
+    height: 560px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.home-page .about-photo-overlay {
+    position: absolute;
+    right: -34px;
+    bottom: -56px;
+    width: 55%;
+}
+
+.home-page .about-photo-overlay img {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: var(--shadow-lg);
+}
+
+.home-page .about-agency-content .btn {
+    border-radius: 4px;
+    width: 100%;
+    max-width: 430px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-transform: none;
+}
+
+.home-page .services-section {
+    padding-top: 140px;
+    background: #e9edf2;
+}
+
+.home-page .services-header h2 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+}
+
+.home-page .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.home-page .service-card {
+    border-radius: 6px;
+    box-shadow: none;
+    border: 1px solid #d8dfe6;
+    padding: 36px 28px;
+}
+
+.home-page .service-card.dark {
+    background: #2f3d51;
+    border-color: #3d4b5f;
+}
+
+.home-page .service-number {
+    width: 54px;
+    height: 54px;
+    border-radius: 0 0 0 18px;
+    top: 0;
+    right: 0;
+}
+
+.home-page .service-card p {
+    font-size: 1.25rem;
+}
+
+.home-page .service-link {
+    font-size: 1.05rem;
+    letter-spacing: 1.2px;
+}
+
+.home-page .pathways-section {
+    padding: 0;
+    background: #e9edf2;
+}
+
+.home-page .pathways-section .container {
+    max-width: none;
+    padding: 0;
+}
+
+.home-page .pathways-header {
+    position: absolute;
+    top: 75px;
+    left: 8%;
+    text-align: left;
+    z-index: 3;
+    margin-bottom: 0;
+    display: block;
+}
+
+.home-page .pathways-header .section-subtitle {
+    color: #f0f4f8;
+}
+
+.home-page .pathways-header h2 {
+    color: #f0f4f8;
+    font-size: 4.6rem;
+    font-weight: 400;
+}
+
+.home-page .pathways-slider {
+    height: 700px;
+    border-radius: 0;
+}
+
+.home-page .pathway-slide {
+    background-position: center;
+}
+
+.home-page .pathway-overlay {
+    background: linear-gradient(90deg, rgba(8, 17, 33, 0.68), rgba(8, 17, 33, 0.25));
+}
+
+.home-page .pathway-content {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 8% 120px;
+}
+
+.home-page .pathway-content h3 {
+    display: none;
+}
+
+.home-page .pathway-content p {
+    font-size: clamp(1.4rem, 2vw, 2.45rem);
+    line-height: 1.52;
+    max-width: 1020px;
+    margin: 190px 0 34px;
+}
+
+.home-page .pathway-cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.home-page .pathway-cta-link .circle {
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .pathway-dots {
+    position: absolute;
+    right: 8%;
+    top: 280px;
+    margin: 0;
+    z-index: 4;
+    flex-direction: column;
+}
+
+.home-page .dot {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.home-page .dot.active {
+    width: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+
+.home-page .cta-section {
+    margin-top: -120px;
+    padding: 0 0 100px;
+    background: #e9edf2;
+    position: relative;
+}
+
+.home-page .cta-section::before {
+    width: 360px;
+    height: 240px;
+    left: 15%;
+    bottom: 120px;
+    opacity: 0.35;
+}
+
+.home-page .cta-content {
+    background: #2d3b4e;
+    border-radius: 14px;
+    padding: 62px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.home-page .cta-content .section-subtitle {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.home-page .cta-content h2 {
+    margin: 0;
+    font-size: clamp(2.3rem, 4vw, 5rem);
+    line-height: 1.16;
+    max-width: 690px;
+}
+
+.home-page .cta-content p {
+    margin: 0;
+    color: #b5c2cf;
+    font-size: 1.4rem;
+    align-self: center;
+}
+
+.home-page .footer {
+    background: #2f3d51;
+}
+
+.home-page .footer-main {
+    padding: 80px 0 30px;
+}
+
+.home-page .footer-grid {
+    grid-template-columns: 1.35fr 1fr 1fr 1.15fr;
+    gap: 40px;
+}
+
+.home-page .footer-logo img {
+    height: 58px;
+    filter: brightness(0) invert(1);
+}
+
+.home-page .footer-logo h3 {
+    font-size: 1.05rem;
+    line-height: 1.2;
+}
+
+.home-page .footer-col h4 {
+    font-size: 1.35rem;
+}
+
+.home-page .footer-col ul li a,
+.home-page .footer-col p,
+.home-page .contact-item p {
+    color: #b6c4d3;
+    font-size: 1.05rem;
+}
+
+.home-page .footer-col ul li a::before {
+    color: #7a8a9d;
+}
+
+.home-page .footer-social a {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background: #1f2c3d;
+}
+
+.home-page .footer-social a:nth-child(1) { background: #1877f2; }
+.home-page .footer-social a:nth-child(2) { background: #e1306c; }
+.home-page .footer-social a:nth-child(3) { background: #ff0000; }
+.home-page .footer-social a:nth-child(4) { background: #000000; }
+.home-page .footer-social a:nth-child(5) { background: #111111; }
+
+.home-page .contact-item {
+    gap: 12px;
+}
+
+.home-page .contact-item i {
+    color: #0f6ad8;
+}
+
+.home-page .footer-bottom {
+    border-top-color: rgba(194, 205, 218, 0.2);
+}
+
+.home-page .footer-bottom-content {
+    align-items: center;
+}
+
+.home-page .footer-links a {
+    background: #579f3f;
+    color: #f5fff2;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+}
+
+.home-page .whatsapp-float,
+.home-page .scroll-to-top {
+    display: none;
+}
+
+/* ========================================
    Responsive Design
    ======================================== */
 @media (max-width: 1024px) {
@@ -1263,6 +1957,38 @@ textarea::placeholder {
     
     .pathway-content h3 {
         font-size: 2.2rem;
+    }
+
+    .home-page .nav-inquiry {
+        display: none;
+    }
+
+    .home-page .top-appointment-btn {
+        min-height: 72px;
+    }
+
+    .home-page .top-bar-home .top-bar-content {
+        min-height: 72px;
+    }
+
+    .home-page .top-bar-home .top-bar-left {
+        gap: 14px;
+    }
+
+    .home-page .pathway-header,
+    .home-page .why-choose-header,
+    .home-page .cta-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-page .features-grid,
+    .home-page .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-page .about-photo-overlay {
+        right: 0;
     }
 }
 
@@ -1366,6 +2092,110 @@ textarea::placeholder {
     
     .pathway-content p {
         font-size: 1rem;
+    }
+
+    .home-page .top-bar-home .top-bar-content {
+        min-height: auto;
+        padding: 16px 0;
+    }
+
+    .home-page .top-bar-home .top-bar-left {
+        justify-content: center;
+    }
+
+    .home-page .top-appointment-btn {
+        min-height: auto;
+        padding: 10px 24px;
+    }
+
+    .home-page .navbar-home {
+        background: #4b4348;
+    }
+
+    .home-page .navbar-home .logo img {
+        height: 52px;
+    }
+
+    .home-page .eligibility-wrapper,
+    .home-page .about-agency-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .home-page .eligibility-content h2 {
+        max-width: none;
+    }
+
+    .home-page .pathway-header {
+        text-align: left;
+    }
+
+    .home-page .step-number {
+        font-size: 2.1rem;
+        margin-bottom: 18px;
+    }
+
+    .home-page .step-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .home-page .step-content p {
+        font-size: 1rem;
+    }
+
+    .home-page .why-choose-header h2,
+    .home-page .about-agency-content h2,
+    .home-page .cta-content h2,
+    .home-page .pathways-header h2 {
+        font-size: 2rem;
+    }
+
+    .home-page .why-choose-header .section-description,
+    .home-page .about-agency-content p,
+    .home-page .cta-content p,
+    .home-page .service-card p,
+    .home-page .pathway-content p {
+        font-size: 1rem;
+    }
+
+    .home-page .features-grid,
+    .home-page .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page .pathways-header {
+        position: static;
+        padding: 26px 20px 0;
+    }
+
+    .home-page .pathways-slider {
+        height: 500px;
+    }
+
+    .home-page .pathway-content {
+        padding: 0 20px 50px;
+    }
+
+    .home-page .pathway-content p {
+        margin-top: 70px;
+    }
+
+    .home-page .pathway-dots {
+        right: 22px;
+        top: 210px;
+    }
+
+    .home-page .cta-section {
+        margin-top: 0;
+        padding-top: 25px;
+    }
+
+    .home-page .cta-content {
+        padding: 28px;
+    }
+
+    .home-page .footer-grid {
+        grid-template-columns: 1fr;
     }
 }
 
